@@ -6,17 +6,17 @@
 const int waterSensorPin = A0;  // Analog pin for water sensor
 const int soilMoisturePin = A1; // Analog pin for soil moisture sensor
 
-// Define the interval for data collection (in milliseconds)
+// for the 15 minute intervels (in milliseconds)
 const unsigned long interval = 900000; // 15 minutes
 
-// Create sensor objects (modify as needed)
+// Creating sensor objects (will modify when we get the needed hardware)
 Adafruit_SHT31 sht31 = Adafruit_SHT31();
 
 void setup() {
-  // Initialize serial communication
+  // to Initialize yung serial communication
   Serial.begin(9600);
 
-  // Initialize sensors (modify as needed)
+  // Initialize sensors  (will modify when needed)
   if (!sht31.begin(0x44)) {
     Serial.println("Couldn't find SHT31 sensor!");
     while (1);
