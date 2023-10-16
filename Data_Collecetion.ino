@@ -1,5 +1,5 @@
-#include <Wire.h>  // library for i2c communication to the
-#include <Adafruit_Sensor.h> // both this library is if we're using adafruit sensors if hindi naman I can change the code later on
+#include <Wire.h>  // library for i2c communication to the esp32/SD_card
+#include <Adafruit_Sensor.h> // both this library will used if we're using adafruit sensors if hindi naman I can change the code later on
 #include <Adafruit_SHT31.h>  
 
 // Define of sensors and their respective pins sa arduino uno
@@ -44,6 +44,8 @@ void loop() {
     Serial.print("Temperature: ");
     Serial.println(temperature);
 
-    // this part yung ilalagay naten kung saan  Isasave data yung either through an SD card or send it to a server
+    // this part yung ilalagay naten kung saan  Isasave data yung either through an SD card or send it to-
+    //a server and will also include timesptamps for data management and acquisition
+   
   }
 }
